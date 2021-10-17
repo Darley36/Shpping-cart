@@ -1,26 +1,26 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-h1{
+h1 {
   text-align: center;
 }
-.container{
+.container {
   width: 1400px;
   height: 500px;
   margin: auto;
   margin-top: 20px;
 }
-.shopping{
+.shopping {
   width: 700px;
   height: 500px;
   text-align: right;
@@ -28,7 +28,7 @@ h1{
 }
 .phone {
   display: inline-block;
-  padding: .5em;
+  padding: 0.5em;
   margin: 0 1em 1em 0.25em;
   border: 4px solid #d9d9d9;
   background: #f7f7f7;
@@ -46,9 +46,20 @@ h1{
   padding: 5rem 2rem;
   text-align: center;
 }
-.shoppingDetails{
+.shoppingDetails {
   width: 700px;
   height: 500px;
   text-align: right;
-  float: left; 
+  float: left;
+}
+.shopping-list {
+  width: 700px;
+  height: 250px;
+  text-align: center;
+  float: right;
+  margin-top: 10%;
+  margin-right: 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
