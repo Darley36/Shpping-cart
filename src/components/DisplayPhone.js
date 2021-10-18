@@ -7,7 +7,7 @@ class DisplayPhone extends Component {
     return (
       <div>
         {displayPhones.map((phone) => (
-          <Phone key={phone} id={phone} brand={phonesphone.brand} />
+          <Phone key={phone} id={phone} brand={phones[phone].brand} />
         ))}
       </div>
     );
