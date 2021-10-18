@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { DropTarget } from "react-dnd";
 import { ItemTypes } from "./Constants";
 import Phone from "./Phone";
+import DisplayPhone from "./DisplayPhone"; // Lines of code stay the same here.
 
 // DnD Spec
 const ShoppingCartSpec = {
@@ -21,11 +22,23 @@ let collect = (connect, monitor) => {
 
 class ShoppingCart extends Component {
   render() {
-    return (
-      <div className="shopping-cart">
-        <Phone name="Test_Phone" />
+    <div className="shopping-cart">
+      <Phone name="Test_Phone" />
+    </div>;
+
+    return connectDropTarget(
+      <div className="shopping-cart" style={style}>
+        {!inCart_phones.length &&
+          (isActive ? "Humm, phone!" : "Drag here to order!")}
+        {inCart_phones.length ? (
+          <DisplayPhone displayPhones={inCart_phones} />
+        ) : null}
       </div>
     );
   }
 }
-export default ShoppingCart;
+export default DropTarget(
+  ItemTypes.PHONE,
+  ShoppingCartSpec,
+  collect
+)(ShoppingCart);
