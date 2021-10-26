@@ -47,7 +47,7 @@ class Phone extends Component {
     return connectDragSource(
       <div className={phoneClass} style={style}>
         <div className="image">
-          <img src="/images/phone.jpg" />
+          <img src="/images/phone2.jfif" />
         </div>
         <div className="content">
           <div className="phone-name">{brand}</div>

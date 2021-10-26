@@ -9,7 +9,7 @@ class MyCart extends Component {
                     <div className="ui card centered">
                         <div className="content">
                         <img
-                            src="/images/phone.jpg"
+                            src="/images/phone2.jfif"
                             className="ui mini right floated image"
                         />
                         <div className="header">Test_Phone</div>
